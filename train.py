@@ -1,7 +1,5 @@
 
-!pip install wandb
-
-#13b86763ab8ddf529c91c7dce385c6cb04b5253e
+#!pip install wandb
 
 import wandb
 wandb.login(key="13b86763ab8ddf529c91c7dce385c6cb04b5253e")
