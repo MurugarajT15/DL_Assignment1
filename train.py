@@ -698,6 +698,13 @@ wandb.log({"confusion_matrix": wandb.plot.confusion_matrix(
 
 wandb.finish()
 
+Fnn = FFNN(x_train, y_train, x_test, y_test,num_hidden_layers=3,num_neurons = 128,weight_init = 'xavier',
+                act = 'relu',l2_reg = 0)
+    # hyperparameter values obtained from wandb config
+parameters= Fnn.train_model(epochs = 10,eta=1e-3,optimizer = 'nadam1',  batch_size =128)
+loss,accuracy,y_test_pred=Fnn.cal_test_accuracy(x_test)
+print(loss,'\t',accuracy,'\t')
+
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
