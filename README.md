@@ -111,4 +111,5 @@ When applying this FFNN to the MNIST dataset, we identified three effective hype
 3. **5 Hidden Layers, 128 Neurons, Adam Optimizer, Batch Size 32, Learning Rate 1e-3, Xavier Weight Initialization**: Achieved an accuracy of **97.58%**.
 
 These configurations were selected based on their potential to effectively handle the MNIST dataset.
-
+wandb report:(https://wandb.ai/iitm-ma23m015/DA6401-Assignment_1/reports/MA23M015_DA6401-Assignment-1--VmlldzoxMTQ5ODIyNw)
+Github link:(https://github.com/MurugarajT15/DL_Assignment1)
